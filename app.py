@@ -48,4 +48,5 @@ def dashboard():
     user = cur.fetchone()
     return render_template("dashboard.html", user=user)
 
-app.run()
+if __name__ == "__main__":
+    app.run(debug=True)
